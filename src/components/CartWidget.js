@@ -1,10 +1,11 @@
 import foto from '../assets/iconos/carritoSmall.png'
 
 
-function Icono() {
+function CartWidget() {
+  // const {carrito} = props;
     return (
       <img src={foto}/>
         
     );
   }
-export default Icono;
+export default CartWidget;

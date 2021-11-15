@@ -1,6 +1,8 @@
-import Icono from "./CartWidget";
+// import { useState } from "react";
+import CartWidget from "./CartWidget";
 
 function NavBar() {
+  // const [carrito, setCarrito] = useState ([]);
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -23,7 +25,7 @@ function NavBar() {
                 <a className="nav-link">Contacto</a>
               </li>
               <li>
-                <Icono/>
+                <CartWidget/>
               </li>
             </ul>
           </div>
