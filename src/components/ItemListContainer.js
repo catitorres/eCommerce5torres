@@ -7,12 +7,12 @@ const ItemListContainer = (props) => {
     return (
         <>
         {
-           listaProductos.map((productos, index) =>
+           listaProductos.map((producto, index) =>
            <Productos
            key= {index} 
-           image= {Productos.image}
-           titulo= {Productos.titulo}
-           precio= {Productos.precio}/>)
+           image= {producto.image}
+           titulo= {producto.titulo}
+           precio= {producto.precio}/>)
         }
         
         </>

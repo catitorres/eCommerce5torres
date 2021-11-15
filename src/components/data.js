@@ -5,12 +5,7 @@ const data = [
         titulo: "ROPA DE TRABAJO",
         precio: 100,
     },
-    {
-        id: 2,
-        image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-        titulo: "CAMISETAS DEPORTIVAS",
-        precio: 100,
-    },
+
     {
         id: 3,
         image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",

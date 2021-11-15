@@ -1,3 +1,8 @@
+.tituloProduct{
+  text-align: center;
+  font-size: 30px;
+}
+
 .tarjetasFlex {
   display: flex;
   flex-direction: row;
@@ -7,12 +12,19 @@
 
 .tarjetasServicios {
   color: black;
+  text-align: center;
   padding: 3%;
-  margin: 1%;
-  width: 300px;
+  margin: 7%;
+  width: 350px;
   border-style: solid;
   border-color: #ffa424;
   border-radius: 8px;
   border-width: 5px;
   background-color: white;
   box-shadow: 5px 5px 21px -2px rgba(0, 0, 0, 0.1); }
+
+.botones{
+  margin-left: 20px;
+  margin-right: 20px ;
+  margin-top: 10px;
+}

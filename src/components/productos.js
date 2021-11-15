@@ -10,7 +10,7 @@ class Productos extends React.Component {
             <div className="tarjetasServicios">
                 <img src={this.props.image} alt={this.props.titulo}/>
                 <h3>{this.props.titulo}</h3>
-                <p>${this.props.precio}</p>
+                <p className="text-white bg-dark">${this.props.precio}</p>
                 <ItemCount stock={100} initial={1}/>
             </div>
         </div>

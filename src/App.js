@@ -9,7 +9,11 @@ function App() {
   return (
     <>
       <NavBar/>
-      <ItemListContainer itemListContainer={data}/>
+      <h1 className="tituloProduct">PRODUCTOS</h1>
+      <div className="d-flex justify-content-around d-flex flex-wrap">
+        <ItemListContainer itemListContainer={data}/>
+      </div>
+      
     </>
     
   );
