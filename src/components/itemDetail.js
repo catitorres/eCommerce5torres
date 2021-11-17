@@ -1,47 +1,33 @@
-const data = [
-    {
-        id: 1,
-        image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-        titulo: "ROPA DE TRABAJO",
-        precio: 100,
-    },
 
-    {
-        id: 3,
-        image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-        titulo: "BUZOS",
-        precio: 100,
-    },{
-        id: 4,
-        image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-        titulo: "REMERAS",
-        precio: 100,
-    },{
-        id: 5,
-        image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-        titulo: "CAMPERAS",
-        precio: 100,
-    },{
-        id: 6,
-        image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-        titulo: "TAPABOCAS",
-        precio: 100,
-    },{
-        id: 7,
-        image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-        titulo: "GORRAS",
-        precio: 100,
-    },{
-        id: 8,
-        image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-        titulo: "BANDERAS",
-        precio: 100,
-    },{
-        id: 9,
-        image: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-        titulo: "GUANTES",
-        precio: 100,
-    },
+import React from "react";
+import ItemCount from "./ItemCount";
 
-];
-export default data;
+
+const ItemDetail = ({item}) => {
+
+   
+    return(
+        <>
+        {
+            item.image
+            ?
+            <div className="detalleProdu d-flex justify-content-around">
+                <div className="detalleProdu_flex">
+                    <img src={item.image} alt={item.image}/>
+                </div>
+                <div className="detalleProdu_Flex">
+                    <h1>{item.titulo}</h1>
+                    <p>personaliza tu producto como te guste!</p>
+                    <p className="text-white bg-dark">${item.precio}</p>
+                    <ItemCount stock={100} initial={1}/>
+                </div>
+            </div>
+            : <p>cargando...</p>
+        }
+        </>
+        
+    );
+   
+    
+}
+export default ItemDetail;

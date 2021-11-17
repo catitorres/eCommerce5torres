@@ -1,19 +1,21 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./components/navBar";
-import GetDatos from "./components/itemDetailContainer";
-import data from "./components/itemDetail";
+import ItemDetailContainer from "./components/itemDetailContainer";
+import ItemListContainer from "./components/ItemListContainer";
 import './App.css';
+
+
 
 function App() {
   return (
     <>
       <NavBar/>
       <h1 className="tituloProduct">PRODUCTOS</h1>
-      <div className="d-flex justify-content-around d-flex flex-wrap">
-        <GetDatos GetDatos={data}/>
-      </div>
-      
+      {/* <div className="d-flex justify-content-around d-flex flex-wrap">
+        <ItemListContainer/>
+      </div> */}
+      <ItemDetailContainer/>
     </>
     
   );
