@@ -1,8 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./components/navBar";
-import ItemListContainer from "./components/ItemListContainer";
-import  data  from "./components/data";
+import GetDatos from "./components/itemDetailContainer";
+import data from "./components/itemDetail";
 import './App.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <NavBar/>
       <h1 className="tituloProduct">PRODUCTOS</h1>
       <div className="d-flex justify-content-around d-flex flex-wrap">
-        <ItemListContainer itemListContainer={data}/>
+        <GetDatos GetDatos={data}/>
       </div>
       
     </>
